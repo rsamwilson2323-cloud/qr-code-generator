@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>QR Code Generator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #1d2671, #c33764);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: white;
+    }
+
+    .box {
+        background: #111;
+        padding: 25px;
+        border-radius: 12px;
+        width: 350px;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 6px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background: #00e5ff;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+
+    button:hover {
+        background: #00bcd4;
+    }
+
+    img {
+        margin-top: 15px;
+        width: 200px;
+        height: 200px;
+        background: white;
+        padding: 5px;
+        border-radius: 8px;
+    }
+
+    a {
+        display: block;
+        margin-top: 10px;
+        color: #00e5ff;
+        text-decoration: none;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>📱 QR Code Generator</h2>
+
+    <input type="text" id="qrText" placeholder="Enter text / URL">
+
+    <button onclick="generateQR()">Generate QR</button>
+
+    <img id="qrImage" src="" alt="QR Code">
+
+    <a id="downloadLink" download="qrcode.png">⬇ Download QR</a>
+</div>
+
+<script>
+function generateQR() {
+    let text = document.getElementById("qrText").value;
+
+    if (text === "") {
+        alert("Please enter some text!");
+        return;
+    }
+
+    let qrURL = "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=" 
+                + encodeURIComponent(text);
+
+    let img = document.getElementById("qrImage");
+    let link = document.getElementById("downloadLink");
+
+    img.src = qrURL;
+    link.href = qrURL;
+}
+</script>
+
+</body>
+</html>
