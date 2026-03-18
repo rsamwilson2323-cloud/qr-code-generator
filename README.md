@@ -27,7 +27,7 @@ A simple and modern QR Code Generator built using HTML, CSS, and JavaScript. Thi
 ## 📂 Project Structure
 
     qr-code-generator/
-    │── index.html
+    │── qr code generator.html
     │── README.md
     │── LICENSE
 
@@ -50,12 +50,12 @@ git clone https://github.com/rsamwilson2323-cloud/qr-code-generator.git
 cd qr-code-generator
 
 ### 3️⃣ Open the project
-Double click index.html  
+Double click qr code generator.html
 OR run:
 
-start index.html      (Windows)
-open index.html       (Mac)
-xdg-open index.html   (Linux)
+start qr code generator.html     (Windows)
+open qr code generator.html       (Mac)
+xdg-open qr code generator.html   (Linux)
 
 ---
 
