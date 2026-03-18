@@ -35,9 +35,8 @@ A simple and modern QR Code Generator built using HTML, CSS, and JavaScript. Thi
 
 ## 📦 Requirements
 
-No installation required ✅
-
-Just a browser (Chrome, Edge, etc.)
+No installation required ✅  
+Just a web browser (Chrome, Edge, etc.)
 
 ---
 
@@ -50,12 +49,20 @@ git clone https://github.com/rsamwilson2323-cloud/qr-code-generator.git
 cd qr-code-generator
 
 ### 3️⃣ Open the project
-Double click qr code generator.html
-OR run:
 
-start qr code generator.html     (Windows)
-open qr code generator.html       (Mac)
-xdg-open qr code generator.html   (Linux)
+Double click:
+qr code generator.html
+
+OR use command:
+
+Windows:
+start "qr code generator.html"
+
+Mac:
+open "qr code generator.html"
+
+Linux:
+xdg-open "qr code generator.html"
 
 ---
 
@@ -78,15 +85,15 @@ xdg-open qr code generator.html   (Linux)
 
 ## 🔗 API Used
 
-This project uses a free QR generation API to create QR codes dynamically. :contentReference[oaicite:0]{index=0}
+https://api.qrserver.com/v1/create-qr-code/
 
 ---
 
 ## 📌 Future Improvements
 
-- 📱 Mobile responsive improvements  
 - 🎨 Custom QR colors and styles  
 - 🧠 Offline QR generation  
+- 📱 Better mobile responsiveness  
 - 🔐 WiFi / Contact QR support  
 
 ---
